@@ -1,0 +1,7 @@
+<%= form_with :model => @place do |form| %>
+  <p>
+    <%= form.label "name of the place" %>
+    <%= form.text_field "place" %>
+  </p>
+  <%= form.submit %>
+<% end %>
