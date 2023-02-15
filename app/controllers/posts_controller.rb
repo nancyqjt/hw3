@@ -13,7 +13,7 @@ class PostsController < ApplicationController
         @post = Post.new
         @post["title"] = params["post"]["title"]
         @post["description"] = params["post"]["description"]
-        @post["date"] = params["post"]["date"]
+        @post["posted_on"] = params["post"]["posted_on"]
         @post.save
         redirect_to "/places/#{@post["place_id"]}"
     end
